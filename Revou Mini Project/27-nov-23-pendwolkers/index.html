@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculine</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SEGITIGA KALKULATOR</a>
+    <nav class="navigation">
+        <a href="#">
+            <button>Luas Segitiga</button>
+        </a>
+        <a href="keliling.html">
+            <button>Keliling Segitiga</button>
+        </a>
+    </nav>
+</div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+              <nav class="navigation">
+            <a href="">Luas Segitiga</a>
+            <a href="">Keliling Segitiga</a>
+        </nav>
+    </button>
+</nav>
+    <!-- NAVBAR END -->
+<div>
+ <div class="main-container">
+    <h2 id="title-text">Luas Segitiga</h2>
+    <div class="rumus-img">
+        <img class="color invertible" src="/Revou Mini Project/27-nov-23-pendwolkers/assets/images/Screenshot 2023-12-07 231909.png" alt="rumus luas segitiga" />
+    </div>
+
+    <p>Di mana: L = Luas | a = Alas | t = Tinggi</p>
+</div>
+    <section class="input-section">
+        <form id="input-form">
+        <label for="alas">Alas</label>
+        <input type="number" id="alas" class="katik-input">
+        <label for="tinggi" >Tinggi</label>
+        <input type="number" id="tinggi" class="katik-input">
+        <p id="hasil" class="hasil">Hasil:</p>
+        <button class="hitung" type="button" onclick="LuasSegitiga();">Hitung</button>
+        <button class="reset-btn" type="button" onclick="ResetForm();">Reset</button>
+
+
+    </form>
+    </section>
+
+</div>
+    <script src="JS/js.js"></script>
+
+</body>
+</html>
